@@ -3,5 +3,5 @@
 
 <p>Appointments: <%@patient.appointments.each do |appt| %>
   <%= appt.appointment_datetime.strftime("%B %d, %G at %R") %>
-  <a href="/patients/<%=appt.doctor_id%>"><%=appt.doctor.name%></a>
+  <a href="/doctors/<%=appt.doctor_id%>"><%=appt.doctor.name%></a>
 <%end%></p>
