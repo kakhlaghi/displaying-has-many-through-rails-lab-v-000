@@ -5,6 +5,7 @@ class PatientsController < ApplicationController
   
   def index
     @patients = Patient.all
+    binding.pry
   end
   
   def new
