@@ -9,7 +9,7 @@ class AppointmentsController < ApplicationController
   end
   
   def create 
-    appointment = appointment.create(appointment_params)
+    appointment = Appointment.create(appointment_params)
     redirect_to appointment
   end
   
