@@ -14,7 +14,7 @@ class AppointmentsController < ApplicationController
   end
   
   private 
-    def appt
+    def appointment_params
       params.require(:doctor).permit(:name, :department)
     end
 end
